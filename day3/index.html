@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Components</title>
+    <!-- Script tags including React -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react-dom.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <style>
+        body {
+            font-family: Camphor, Open Sans, Segoe UI, sans-serif;
+            text-rendering: optimizeLegibility;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="root"></div>
+    <div id="app"></div>
+    <script type="text/babel">
+
+        function Greeting(){
+             return <h1>Nain 🎄 </h1>;
+              }
+        ReactDOM.render(
+        <Greeting />, 
+        document.getElementById("root")
+         );
+
+
+        class App extends React.Component{
+             render(){
+                 return <p>This is a text</p>
+             }
+         }
+
+        var mount = document.querySelector('#app');
+        ReactDOM.render(<App />, mount);    
+    </script>
+</body>
+
+</html>

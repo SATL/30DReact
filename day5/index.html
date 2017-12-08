@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Props & Complex components</title>
+    <!-- Script tags including React -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react-dom.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <link href="css/timeline.css" rel="stylesheet" type="text/css" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"
+    />
+
+
+    <style>
+        body {
+            font-family: Camphor, Open Sans, Segoe UI, sans-serif;
+            text-rendering: optimizeLegibility;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div id="app" class="demo"></div>
+
+    <script type="text/babel" src="components/header.js"></script>
+    <script type="text/babel" src="components/content.js"></script>
+    <script type="text/babel" src="components/activity-item.js"></script>
+    <script type="text/babel" src="app.js"></script>
+</body>
+
+</html>
